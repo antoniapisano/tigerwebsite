@@ -1,11 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-
+import { Cinzel } from 'next/font/google'
 // components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const cinzel = Cinzel({ subsets: ['latin'], weight: ['700']})
 
 export const metadata = {
   title: 'Tiger Website',
@@ -14,11 +13,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
-        </body>
+    <div className="page-container" >
+   <div className="content-wrap">
+      <Navbar />
+      {children}
+      </div>
+      <Footer />
+    </div>
         
     
   )

@@ -25,3 +25,120 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.page-container {
+  background-image: url('/tigerbackground.webp');
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  opacity: 45%;
+
+}
+
+.content-wrap {
+  margin: none;
+  padding-top: none; 
+}
+
+.Navbar {
+  z-index: 1;
+  height: 60px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: auto;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  background: transparent;
+}
+
+.Navbar li {
+  font-size: 1.5em;
+  list-style-type: none;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 60px;
+}
+
+.Navbar li a {
+  color: white;
+  z-index: 1;
+  font-style: normal;
+  text-decoration: none;
+  transition: color 500ms;
+}
+
+.Navbar li > a:hover {
+  color: blue;
+}
+
+.Navbar > .nav-items > a {
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  float: none;
+  color: blue;
+  text-decoration: none;
+  margin: 15px;
+  position: relative;
+  opacity: 0.9;
+  transform: color 500ms;
+}
+
+.Navbar > .nav-items > a:hover {
+  opacity: 1;
+}
+
+
+.Navbar > .nav-items > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: blue;
+  transition: all 0.45s;
+}
+
+.Navbar > .nav-items > a:hover::before {
+  width: 100%;
+}
+
+
+
+.Navbar > .nav-toggle {
+  display: none;
+}
+
+
+.Footer {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+  background-color: black;
+  color: lightgrey; 
+  font-size: 0.5vh;   
+  list-style-type: none;   
+}
+
+.Footer li {
+font-size: 2.5em;
+list-style-type: none;
+justify-content: space-between;
+text-align: center;
+display: inline-flex;
+padding: 0 20px;
+position: relative;
+color: lightgrey;
+}
+
