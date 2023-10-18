@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,6 +31,48 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@keyframes title {
+  from {color: orange}
+  to {color: green;}
+}
+
+h1 {
+  font-family: "cinzel" ;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: "dm" ;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.homewrap {
+  text-align: center;
+}
+
+@keyframes button {
+  from {background-color: orange}
+  to {background-color: green;}
+}
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "dm"  ;
+  animation-name: button;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
 .page-container {
   background-image: url('/tigerbackground.webp');
@@ -33,6 +80,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  align-items: center;
+  align-content: center;
   height: 100%;
   opacity: 45%;
 
@@ -58,6 +107,7 @@ body {
 
 .Navbar li {
   font-size: 1.5em;
+  font-family: "dm"  ;
   list-style-type: none;
   display: inline-block;
   justify-content: space-between;
@@ -133,6 +183,7 @@ body {
 
 .Footer li {
 font-size: 2.5em;
+font-family: "dm"  ;
 list-style-type: none;
 justify-content: space-between;
 text-align: center;
