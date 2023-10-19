@@ -1,5 +1,6 @@
 "use client";
 import {useState} from 'react';
+import { dm } from '../fonts.js'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,16 +8,16 @@ const Navbar = () => {
     <div className="Navbar">
       <div className={`nav-items ${isOpen && "open"}`}>
         <ul>
-          <li>
+          <li className={dm.className}>
         <a>Shop</a>
         </li>
-        <li>
+        <li className={dm.className}>
         <a>Forum</a>
         </li>
-        <li>
+        <li className={dm.className}>
         <a>Photo Gallery</a>
         </li>
-        <li>
+        <li className={dm.className}>
         <a>Youtube Gallery</a>
         </li>
         </ul>

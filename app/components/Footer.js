@@ -1,8 +1,10 @@
+import { dm } from '../fonts.js'
+
 const Footer = () => {
     return ( 
-        <div className="Footer">
+        <div  className="Footer">
             <ul>
-                <li>Copyright © 2023 Antonia Pisano. All rights reserved</li>
+                <li className={dm.className}>Copyright © 2023 Antonia Pisano. All rights reserved</li>
                 </ul>  
     </div>
     );

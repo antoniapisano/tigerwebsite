@@ -1,18 +1,14 @@
 import Image from 'next/image'
-import { DM_Serif_Display } from 'next/font/google'
+import { dm } from './fonts'
+import { cinzel } from './fonts'
 
-const dm = DM_Serif_Display({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: "--font-dm",
-})
 
 export default function Home() {
   return (
     <div className="Homewrap">
-      <h1>Tigers are the King of Cats</h1>
-        <h3 className={`${dm.variable} text-white`}> Help keep these magnificent beasts alive! </h3>
-          <button>Donate Now</button>
+      <h1 className={cinzel.className}>Tigers are the King of Cats</h1>
+        <h3 className={dm.className}>Help keep these magnificent beasts alive! </h3>
+          <button className={dm.className}>Donate Now</button>
     </div>
   )
 }

@@ -1,10 +1,7 @@
 import './globals.css'
-import { Cinzel } from 'next/font/google'
 // components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-
-const cinzel = Cinzel({ subsets: ['latin'], weight: ['700']})
 
 export const metadata = {
   title: 'Tiger Website',
